@@ -62,7 +62,7 @@ i{float:none;display:flex}.module-blocks-314 .block-body{display:flex;flex-direc
       'resize' => 'fill',
     ),
     'status' => true,
-    'id' => 'blocks-5f2971ddcb9af',
+    'id' => 'blocks-5f297d70e8a74',
     'module_id' => 314,
     'classes' => 
     array (
@@ -149,7 +149,7 @@ i{float:none;display:flex}.module-blocks-314 .block-body{display:flex;flex-direc
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <a href=""><img src="/image/catalog/slider-show/flash_4.jpg" alt="Grand opening discount 10% of for all orders"></a>
+      <a href=""><img src="/image/catalog/slider-show/grand_opening_8_7.jpg" alt="Grand opening discount 10% of for all orders"></a>
     </div>
     <div class="item">
       <a href=""><img src="/image/catalog/slider-show/flash_1.jpg" alt="We shipp to all 50 states in the US"></a>

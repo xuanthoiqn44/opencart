@@ -19,7 +19,7 @@ a{text-decoration:underline}.module-notification-137.notification{max-width:1280
     'text' => 'We use cookies and other similar technologies to improve your browsing experience and the functionality of our site. <a href="#">Privacy Policy</a>.',
     'notificationCloseText' => 'OK',
     'status' => true,
-    'id' => 'notification-5f2971df0e3ac',
+    'id' => 'notification-5f297d71f018e',
     'module_id' => 137,
     'classes' => 
     array (

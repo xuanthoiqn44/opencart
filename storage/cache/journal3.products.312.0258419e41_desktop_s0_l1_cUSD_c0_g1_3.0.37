@@ -19,7 +19,7 @@ a{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color
 .4em}.module-products-312 .product-grid .product-thumb .extra-group .btn+.btn::before{display:inline-block}.module-products-312 .product-grid .product-thumb .extra-group .btn + .btn .btn-text{display:inline-block;padding:0
 .4em}.module-products-312 .product-grid .product-layout .extra-group>div{justify-content:space-between}.module-products-312 .product-grid .product-thumb .extra-group>div{padding:4px}.module-products-312 .product-grid .product-thumb .extra-group .btn.btn, .module-products-312 .product-grid .product-thumb .extra-group .btn.btn:visited{font-size:12px;font-weight:400;text-transform:none}.module-products-312 .product-grid .product-thumb .extra-group
 .btn.btn{padding:2px;padding-right:6px;padding-left:6px;min-width:20px;min-height:20px}.desktop .module-products-312 .product-grid .product-thumb .extra-group .btn.btn:hover{box-shadow:0 5px 30px -5px rgba(0, 0, 0, 0.25)}.module-products-312 .product-grid .product-thumb .extra-group .btn.btn:active, .module-products-312 .product-grid .product-thumb .extra-group .btn.btn:hover:active, .module-products-312 .product-grid .product-thumb .extra-group .btn.btn:focus:active{box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25)}.module-products-312 .product-grid .product-thumb .extra-group .btn.btn:focus{box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25)}.module-products-312 .product-grid .product-thumb .extra-group .btn.btn.btn.disabled::after{font-size:20px}.module-products-312 .product-grid .product-thumb .extra-group .btn + .btn.btn, .module-products-312 .product-grid .product-thumb .extra-group .btn+.btn.btn:visited{font-size:12px;font-weight:400;text-transform:none}.module-products-312 .product-grid .product-thumb .extra-group .btn+.btn.btn{padding:2px;padding-right:6px;padding-left:6px;min-width:20px;min-height:20px}.desktop .module-products-312 .product-grid .product-thumb .extra-group .btn+.btn.btn:hover{box-shadow:0 5px 30px -5px rgba(0, 0, 0, 0.25)}.module-products-312 .product-grid .product-thumb .extra-group .btn + .btn.btn:active, .module-products-312 .product-grid .product-thumb .extra-group .btn + .btn.btn:hover:active, .module-products-312 .product-grid .product-thumb .extra-group .btn+.btn.btn:focus:active{box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25)}.module-products-312 .product-grid .product-thumb .extra-group .btn+.btn.btn:focus{box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25)}.module-products-312 .product-grid .product-thumb .extra-group .btn+.btn.btn.btn.disabled::after{font-size:20px}.module-products-312 .product-grid.product-grid .product-thumb .extra-group{position:static;margin-top:initial}.module-products-312 .product-grid.product-grid .product-thumb .extra-group>div{position:static;transform:none;opacity:1}.module-products-312 .product-grid.product-grid .product-thumb .buttons-wrapper{position:static;width:auto;overflow:visible;order:initial;margin-top:auto;transform:none}.module-products-312 .product-grid.product-grid .product-thumb .buttons-wrapper .button-group{position:static;opacity:1;visibility:visible;transform:none}.module-products-312 .product-grid.product-grid .product-thumb:hover .buttons-wrapper .button-group{transform:none}.module-products-312 .product-grid.product-grid .wish-group{position:static;width:auto;top:auto;visibility:visible;opacity:1;transform:translate3d(0,0,0);justify-content:flex-start}.module-products-312 .product-grid .product-thumb .btn-quickview.btn{border-radius:50px !important}.module-products-312 .module-body{padding-right:1px}@media (max-width: 1024px){.module-products-312 .swiper-buttons{display:none !important}.module-products-312 .product-grid .product-thumb .btn-quickview{visibility:visible;opacity:1}}@media (max-width: 768px){.module-products-312 .swiper-container{overflow:visible}.module-products-312 .product-layout.swiper-slide{margin-right:0px;width:calc((100% - 2 * 0px) / 3 - 0.01px)}.module-products-312 .product-layout:not(.swiper-slide){padding:0px;width:calc(100% / 3 - 0.01px)}.module-products-312 .product-grid .product-thumb .image
-.btn{background:rgba(221, 14, 28, 1)}}@media (max-width: 470px){.module-products-312 .product-grid .product-thumb .btn-cart .btn-text{display:none}.module-products-312 .product-grid .product-thumb .btn-cart::before{display:inline-block}}',
+.btn{background:rgba(221, 14, 28, 1)}}@media (max-width: 470px){.module-products-312 .product-layout.swiper-slide{margin-right:0px;width:calc((100% - 1 * 0px) / 2 - 0.01px)}.module-products-312 .product-layout:not(.swiper-slide){padding:0px;width:calc(100% / 2 - 0.01px)}.module-products-312 .product-grid .product-thumb .btn-cart .btn-text{display:none}.module-products-312 .product-grid .product-thumb .btn-cart::before{display:inline-block}}',
   'fonts' => 
   array (
   ),
@@ -48,6 +48,11 @@ a{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color
         768 => 
         array (
           'items' => 3,
+          'spacing' => 0,
+        ),
+        470 => 
+        array (
+          'items' => 2,
           'spacing' => 0,
         ),
       ),
@@ -109,7 +114,7 @@ a{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color
     'moduleProductStat1' => 'brand',
     'moduleProductStat2' => 'none',
     'status' => true,
-    'id' => 'products-5f2971de65929',
+    'id' => 'products-5f297d71444dc',
     'module_id' => 312,
     'classes' => 
     array (
@@ -160,11 +165,47 @@ a{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color
         ),
         'filter' => 
         array (
-          'sort' => 'random',
+          'sort' => 'p.sort_order',
           'order' => 'ASC',
           'start' => 0,
           'limit' => 28,
-          'preset' => 'random',
+          'preset' => 'custom',
+          'products' => 
+          array (
+            0 => '1066',
+            1 => '504',
+            2 => '505',
+            3 => '1006',
+            4 => '1134',
+            5 => '520',
+            6 => '1115',
+            7 => '1052',
+            8 => '434',
+            9 => '820',
+            10 => '554',
+            11 => '1113',
+            12 => '1010',
+            13 => '1116',
+            14 => '789',
+            15 => '629',
+            16 => '1139',
+            17 => '495',
+            18 => '496',
+            19 => '757',
+            20 => '713',
+            21 => '872',
+            22 => '921',
+            23 => '448',
+            24 => '447',
+            25 => '1035',
+            26 => '605',
+            27 => '522',
+            28 => '875',
+            29 => '874',
+            30 => '918',
+            31 => '459',
+          ),
+          'custom' => true,
         ),
         'id' => '312-1',
         'classes' => 
