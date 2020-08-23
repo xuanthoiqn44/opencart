@@ -1,0 +1,205 @@
+<?php $val = array (
+  'css' => '.top-menu-14 .j-menu li.top-menu-item-2>a::before{content:\'\\e9a9\' !important;font-family:icomoon !important}.top-menu-14>ul>.top-menu-item-2>a{text-align:left}.top-menu-14>ul>.top-menu-item-2>a>.links-text{display:block}.top-menu-14 > ul > .top-menu-item-2 > a .count-badge{position:relative}.top-menu-14 li.top-menu-item-3>a::before{content:\'\\eac1\' !important;font-family:icomoon !important}.top-menu-14 li.top-menu-item-4>a::before{content:\'\\ead5\' !important;font-family:icomoon !important}.top-menu-14 li.top-menu-item-5>a::before{content:\'\\e98e\' !important;font-family:icomoon !important}.top-menu-14 .j-menu li.top-menu-item-6>a::before{content:\'\\e991\' !important;font-family:icomoon !important}.top-menu-14>ul>.top-menu-item-6>a{text-align:left}.top-menu-14>ul>.top-menu-item-6>a>.links-text{display:block}.top-menu-14 > ul > .top-menu-item-6 > a .count-badge{position:relative}.top-menu-14 .j-menu li.top-menu-item-7>a::before{content:\'\\e928\' !important;font-family:icomoon !important}.top-menu-14>ul>.top-menu-item-7>a{text-align:left}.top-menu-14>ul>.top-menu-item-7>a>.links-text{display:block}.top-menu-14 > ul > .top-menu-item-7 > a .count-badge{position:relative}',
+  'fonts' => 
+  array (
+  ),
+  'settings' => 
+  array (
+    'scheduledStatus' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'status' => true,
+    'id' => 'top-menu-5f3fe6b1cc0ef',
+    'module_id' => 14,
+    'classes' => 
+    array (
+      0 => 'top-menu',
+      1 => 'top-menu-14',
+    ),
+    'items' => 
+    array (
+      2 => 
+      array (
+        'title' => 'Account <s>Edit / Logout</s>',
+        'link' => 
+        array (
+          'type' => 'page',
+          'id' => '7',
+          'href' => 'https://www.marbletilesale.com/index.php?route=account/account',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'top-menu-item',
+          2 => 'top-menu-item-2',
+          'multi-level' => false,
+          'dropdown' => true,
+          'drop-menu' => true,
+          'icon-only' => false,
+        ),
+        'items' => 
+        array (
+          3 => 
+          array (
+            'title' => 'Edit Account',
+            'link' => 
+            array (
+              'type' => 'page',
+              'id' => '',
+              'href' => 'https://www.marbletilesale.com/index.php?route=account/account',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'classes' => 
+            array (
+              0 => 'menu-item',
+              1 => 'top-menu-item-3',
+              'dropdown' => false,
+              'icon-only' => NULL,
+            ),
+            'items' => 
+            array (
+            ),
+          ),
+          4 => 
+          array (
+            'title' => 'My Orders',
+            'link' => 
+            array (
+              'type' => 'page',
+              'id' => '',
+              'href' => 'https://www.marbletilesale.com/index.php?route=account/order',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'classes' => 
+            array (
+              0 => 'menu-item',
+              1 => 'top-menu-item-4',
+              'dropdown' => false,
+              'icon-only' => NULL,
+            ),
+            'items' => 
+            array (
+            ),
+          ),
+          5 => 
+          array (
+            'title' => 'Logout',
+            'link' => 
+            array (
+              'type' => 'page',
+              'id' => '',
+              'href' => 'https://www.marbletilesale.com/index.php?route=account/logout',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'classes' => 
+            array (
+              0 => 'menu-item',
+              1 => 'top-menu-item-5',
+              'dropdown' => false,
+              'icon-only' => NULL,
+            ),
+            'items' => 
+            array (
+            ),
+          ),
+        ),
+      ),
+      6 => 
+      array (
+        'title' => 'Wishlist <s>Edit Your Wishlist</s>',
+        'link' => 
+        array (
+          'type' => 'page',
+          'id' => '',
+          'href' => 'https://www.marbletilesale.com/index.php?route=account/wishlist',
+          'name' => '',
+          'total' => '{{ $wishlist }}',
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+            0 => 'wishlist-badge',
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'top-menu-item',
+          2 => 'top-menu-item-6',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+          'icon-only' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      7 => 
+      array (
+        'title' => 'Compare <s>Product Comparison</s>',
+        'link' => 
+        array (
+          'type' => 'page',
+          'id' => '',
+          'href' => 'https://www.marbletilesale.com/index.php?route=product/compare',
+          'name' => '',
+          'total' => '{{ $compare }}',
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+            0 => 'compare-badge',
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'top-menu-item',
+          2 => 'top-menu-item-7',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+          'icon-only' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+);

@@ -1,0 +1,49 @@
+server {
+        listen 80;
+
+        server_name marbletilesale.com www.marbletilesale.com;
+
+        root /var/www/html/marbletilesale.com/upload;
+        error_log      /var/www/html/marbletilesale.com/upload/logs/marbletilesale.com.error.log  error;
+        client_max_body_size 20M;
+
+        location / {
+                index index.php index.html;
+                try_files $uri $uri/ @handler;
+                expires 30d;
+        }
+
+        location  /. {
+                return 404;
+        }
+
+        location = /sitemap.xml {
+                rewrite ^(.*)$ /index.php?route=feed/google_sitemap break;
+        }
+
+        location = /googlebase.xml {
+                rewrite ^(.*)$ /index.php?route=feed/google_base break;
+        }
+
+        location @handler {
+                rewrite ^/(.+)$ /index.php?_route_=$1 last;
+        }
+
+        location ~ .php/ {
+                rewrite ^(.*.php)/ $1 last;
+        }
+
+        location ~ .php$ {
+                if (!-e $request_filename) { rewrite / /index.php last; }
+                expires        off;
+                fastcgi_pass   unix:/run/php/php7.2-fpm.sock;
+                fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+                include        fastcgi_params;
+        }
+
+        #include /usr/local/nginx/conf/staticfiles.conf;
+        #include /usr/local/nginx/conf/php.conf;
+        #include /usr/local/nginx/conf/drop.conf;
+        include /etc/ssl/certs/marbletilesale.com/letsencrypt.conf;
+}
+

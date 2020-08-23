@@ -1,13 +1,13 @@
 <?php
 class ControllerExtensionPaymentPayPal extends Controller {
 	private $error = array();
-	
+		
 	public function __construct($registry) {
 		parent::__construct($registry);
 
 		if (version_compare(phpversion(), '7.1', '>=')) {
-			ini_set('precision', 17);
-			ini_set('serialize_precision', -1);
+			ini_set('precision', 14);
+			ini_set('serialize_precision', 14);
 		}
 	}
 	
@@ -81,9 +81,13 @@ class ControllerExtensionPaymentPayPal extends Controller {
 				if (isset($error['name']) && ($error['name'] == 'CURLE_OPERATION_TIMEOUTED')) {
 					$error['message'] = $this->language->get('error_timeout');
 				}
-					
-				$error_messages[] = $error['message'];
-					
+				
+				if (isset($error['details'][0]['description'])) {
+					$error_messages[] = $error['details'][0]['description'];
+				} else {
+					$error_messages[] = $error['message'];
+				}
+									
 				$this->model_extension_payment_paypal->log($error, $error['message']);
 			}
 				
@@ -166,7 +170,7 @@ class ControllerExtensionPaymentPayPal extends Controller {
 		$item_total = 0;
 				
 		foreach ($this->cart->getProducts() as $product) {
-			$product_price = $this->currency->format($product['price'], $currency_code, $currency_value, false);
+			$product_price = number_format($this->currency->format($product['price'], $currency_code, $currency_value, false), 2);
 				
 			$item_info[] = array(
 				'name' => $product['name'],
@@ -182,8 +186,8 @@ class ControllerExtensionPaymentPayPal extends Controller {
 			$item_total += $product_price * $product['quantity'];
 		}
 				
-		$sub_total = $this->currency->format($this->cart->getSubTotal(), $currency_code, $currency_value, false);
-		$total = $this->currency->format($this->cart->getTotal(), $currency_code, $currency_value, false);
+		$sub_total = number_format($this->currency->format($this->cart->getSubTotal(), $currency_code, $currency_value, false), 2);
+		$total = number_format($this->currency->format($this->cart->getTotal(), $currency_code, $currency_value, false), 2);
 		$tax_total = $total - $sub_total;
 						
 		$discount_total = 0;
@@ -191,10 +195,10 @@ class ControllerExtensionPaymentPayPal extends Controller {
 		$shipping_total = 0;
 		
 		if (isset($this->session->data['shipping_method'])) {
-			$shipping_total = $this->currency->format($this->tax->calculate($this->session->data['shipping_method']['cost'], $this->session->data['shipping_method']['tax_class_id'], $this->config->get('config_tax')), $currency_code, $currency_value, false);
+			$shipping_total = number_format($this->currency->format($this->tax->calculate($this->session->data['shipping_method']['cost'], $this->session->data['shipping_method']['tax_class_id'], $this->config->get('config_tax')), $currency_code, $currency_value, false), 2);
 		}
 		
-		$order_total = $this->currency->format($order_info['total'], $currency_code, $currency_value, false);
+		$order_total = number_format($this->currency->format($order_info['total'], $currency_code, $currency_value, false), 2);
 		
 		$rebate = $item_total + $tax_total + $shipping_total - $order_total;
 		
@@ -266,7 +270,11 @@ class ControllerExtensionPaymentPayPal extends Controller {
 					$error['message'] = $this->language->get('error_timeout');
 				}
 				
-				$error_messages[] = $error['message'];
+				if (isset($error['details'][0]['description'])) {
+					$error_messages[] = $error['details'][0]['description'];
+				} else {
+					$error_messages[] = $error['message'];
+				}
 					
 				$this->model_extension_payment_paypal->log($error, $error['message']);
 			}
@@ -372,7 +380,11 @@ class ControllerExtensionPaymentPayPal extends Controller {
 						$error['message'] = $this->language->get('error_timeout');
 					}
 					
-					$error_messages[] = $error['message'];
+					if (isset($error['details'][0]['description'])) {
+						$error_messages[] = $error['details'][0]['description'];
+					} else {
+						$error_messages[] = $error['message'];
+					}
 					
 					$this->model_extension_payment_paypal->log($error, $error['message']);
 				}

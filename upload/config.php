@@ -1,15 +1,15 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://default.opencart.com/');
+define('HTTP_SERVER', 'https://www.marbletilesale.com/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://default.opencart.com/');
+define('HTTPS_SERVER', 'https://www.marbletilesale.com/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/wamp64/www/opencart/upload/catalog/');
-define('DIR_SYSTEM', 'C:/wamp64/www/opencart/upload/system/');
-define('DIR_IMAGE', 'C:/wamp64/www/opencart/upload/image/');
-define('DIR_STORAGE', 'C:/wamp64/www/opencart/storage/');
+define('DIR_APPLICATION', '/var/www/html/marbletilesale.com/upload/catalog/');
+define('DIR_SYSTEM', '/var/www/html/marbletilesale.com/upload/system/');
+define('DIR_IMAGE', '/var/www/html/marbletilesale.com/upload/image/');
+define('DIR_STORAGE', '/var/www/html/marbletilesale.com/storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
@@ -24,7 +24,7 @@ define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'default_opencart_com');
+define('DB_PASSWORD', 'Vinstarcorp2020$$');
+define('DB_DATABASE', 'marbletilesale_com');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

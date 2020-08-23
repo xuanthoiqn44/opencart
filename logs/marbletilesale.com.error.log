@@ -1,0 +1,12 @@
+2020/08/21 00:42:51 [crit] 7020#7020: *5339 SSL_do_handshake() failed (SSL: error:1420918C:SSL routines:tls_early_post_process_client_hello:version too low) while SSL handshaking, client: 216.218.206.68, server: 0.0.0.0:443
+2020/08/21 14:38:04 [error] 7020#7020: *12731 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /var/www/html/marbletilesale.com/upload/system/library/db/mysqli.php:10
+Stack trace:
+#0 /var/www/html/marbletilesale.com/storage/modification/system/library/db.php(35): DB\MySQLi->__construct('localhost', 'root', 'Vinstarcorp2020...', 'marbletilesale_...', '3306')
+#1 /var/www/html/marbletilesale.com/upload/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'root', 'Vinstarcorp2020...', 'marbletilesale_...', '3306')
+#2 /var/www/html/marbletilesale.com/upload/system/startup.php(104): require_once('/var/www/html/m...')
+#3 /var/www/html/marbletilesale.com/upload/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /var/www/html/marbletilesale.com/upload/system/library/db/mysqli.php on line 10" while reading response header from upstream, client: 171.240.255.86, server: marbletilesale.com, request: "GET /admin/index.php?route=journal3/journal3&user_token=2lKlEgMpeVUpKhRtKodDZKAwlKxIzSo1 HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.2-fpm.sock:", host: "www.marbletilesale.com", referrer: "https://www.marbletilesale.com/admin/index.php?route=common/dashboard&user_token=2lKlEgMpeVUpKhRtKodDZKAwlKxIzSo1"
+2020/08/22 19:39:00 [crit] 1476#1476: *5492 SSL_do_handshake() failed (SSL: error:1420918C:SSL routines:tls_early_post_process_client_hello:version too low) while SSL handshaking, client: 66.240.192.138, server: 0.0.0.0:443
+2020/08/22 19:39:01 [crit] 1476#1476: *5496 SSL_do_handshake() failed (SSL: error:14209102:SSL routines:tls_early_post_process_client_hello:unsupported protocol) while SSL handshaking, client: 66.240.192.138, server: 0.0.0.0:443
+2020/08/23 00:16:43 [crit] 1476#1476: *6470 SSL_do_handshake() failed (SSL: error:1420918C:SSL routines:tls_early_post_process_client_hello:version too low) while SSL handshaking, client: 184.105.139.68, server: 0.0.0.0:443
