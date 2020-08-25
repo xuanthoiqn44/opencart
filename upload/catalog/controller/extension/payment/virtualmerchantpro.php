@@ -104,7 +104,7 @@
             }
             
             
-            $data['fields']['ssl_description'] = 'Order ID #' . $this->session->data['order_id'];
+            $data['fields']['ssl_description'] = 'Marbletilesale Order ID #' . $this->session->data['order_id'];
 
             $data['fields']['ssl_company'] = $order_info['payment_company'];
 
