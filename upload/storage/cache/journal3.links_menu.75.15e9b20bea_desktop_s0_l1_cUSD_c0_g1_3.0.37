@@ -1,0 +1,59 @@
+<?php $val = array (
+  'css' => 'div.links-menu-75 .title.module-title{color:rgba(230, 230, 230, 1)}div.links-menu-75 .module-body{display:block;justify-content:flex-start;;-webkit-overflow-scrolling:touch}div.links-menu-75 .menu-item{border-width:1px 0 0 0;flex-grow:0;justify-content:flex-start;width:auto}div.links-menu-75 .menu-item a .links-text{white-space:normal;color:rgba(139, 145, 152, 1)}div.links-menu-75 .menu-item
+a{justify-content:flex-start;width:auto;padding-bottom:5px}div.links-menu-75 .menu-item a:hover .links-text{color:rgba(39, 123, 140, 1)}div.links-menu-75 .count-badge{display:none}.phone footer  div.links-menu-75 .module-title::before{display:none}.phone footer  div.links-menu-75 .module-title+.module-body>li{display:flex}',
+  'fonts' => 
+  array (
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'title' => 'Customer Service',
+    'status' => true,
+    'id' => 'links-menu-5f45185a2d4e3',
+    'module_id' => 75,
+    'classes' => 
+    array (
+      0 => 'links-menu',
+      1 => 'links-menu-75',
+    ),
+    'items' => 
+    array (
+      1 => 
+      array (
+        'title' => 'Contact',
+        'link' => 
+        array (
+          'type' => 'page',
+          'id' => '',
+          'href' => 'https://www.marbletilesale.com/index.php?route=information/contact',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'label' => '',
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'links-menu-item',
+          2 => 'links-menu-item-1',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+);

@@ -1,0 +1,12 @@
+<?php $val = array (
+  420 => 'catalog/product/DSU102/DSU102-.png',
+  962 => 'catalog/Tile Photo/DSU107/e1.png',
+  963 => 'catalog/Tile Photo/DSU103/DSU103+.png',
+  964 => 'catalog/Tile Photo/DSU108/e1.png',
+  965 => 'catalog/Tile Photo/SUCR3903/e2.png',
+  966 => 'catalog/Tile Photo/DSU104/DSU104-.png',
+  967 => 'catalog/Tile Photo/DSU109/e1.png',
+  970 => 'catalog/Tile Photo/TDSUU2509/e.png',
+  968 => 'catalog/Tile Photo/TDSUU2509/e.png',
+  969 => 'catalog/Tile Photo/SUCR3901/e.png',
+);
