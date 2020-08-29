@@ -3,6 +3,8 @@
 $_['text_subject']          = '%s - Order %s';
 $_['text_greeting']         = 'Thank you for your interest in %s products. Your order has been received and will be processed once payment has been confirmed.';
 $_['text_link']             = 'To view your order click on the link below:';
+$_['text_store_address']    = 'Pick up address: Marble and Tile Sale, 1155 Stacy Court, Riverside, CA 92507';
+$_['text_store_phone'] = '(951) 530-3056';
 $_['text_order_detail']     = 'Order Details';
 $_['text_instruction']      = 'Instructions';
 $_['text_order_id']         = 'Order ID:';
@@ -11,7 +13,7 @@ $_['text_order_status']     = 'Order Status:';
 $_['text_payment_method']   = 'Payment Method:';
 $_['text_shipping_method']  = 'Shipping Method:';
 $_['text_email']            = 'E-mail:';
-$_['text_telephone']        = 'Telephone:';
+$_['text_telephone']        = 'Phone:';
 $_['text_ip']               = 'IP Address:';
 $_['text_payment_address']  = 'Payment Address';
 $_['text_shipping_address'] = 'Shipping Address';
