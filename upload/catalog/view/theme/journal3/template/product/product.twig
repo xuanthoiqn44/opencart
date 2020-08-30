@@ -267,9 +267,11 @@
            <div class="price-wrapper">
              <div class="price-group">
                {% if not special %}
-                 <div class="product-price">{{ price }} / sqft</div>
+                 <div class="product-price">{{ price }} </div>
+                 <div style="color: rgba(221, 14, 28, 1)"> / sqft</div>
                {% else %}
-                 <div class="product-price-new">{{ special }} / sqft</div>
+                 <div class="product-price-new">{{ special }} </div>
+                 <div style="color: rgba(221, 14, 28, 1)"> / sqft</div>
                  <div class="product-price-old">{{ price }}</div>
                {% endif %}
              </div>
