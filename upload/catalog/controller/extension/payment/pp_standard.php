@@ -154,9 +154,6 @@ class ControllerExtensionPaymentPPStandard extends Controller {
 
 						$total_paid_match = ((float)$this->request->post['mc_gross'] == $this->currency->format($order_info['total'], $order_info['currency_code'], $order_info['currency_value'], false));
 
-						$this->log->write('PP_STANDARD :: receiver_match: ' . $receiver_match);
-						$this->log->write('PP_STANDARD :: total_paid_match: ' . $total_paid_match);
-						$this->log->write('PP_STANDARD :: order_id: ' . $order_id);
 						if ($receiver_match && $total_paid_match) {
 							$order_status_id = $this->config->get('payment_pp_standard_completed_status_id');
 						}
@@ -168,6 +165,11 @@ class ControllerExtensionPaymentPPStandard extends Controller {
 						if (!$total_paid_match) {
 							$this->log->write('PP_STANDARD :: TOTAL PAID MISMATCH! ' . $this->request->post['mc_gross']);
 						}
+						
+						$this->log->write('PP_STANDARD :: receiver_match: ' . $receiver_match);
+						$this->log->write('PP_STANDARD :: total_paid_match: ' . $total_paid_match);
+						$this->log->write('PP_STANDARD :: order_id: ' . $order_id);
+						$this->log->write('PP_STANDARD :: order_status_id: ' . $order_status_id);
 						break;
 					case 'Denied':
 						$order_status_id = $this->config->get('payment_pp_standard_denied_status_id');
