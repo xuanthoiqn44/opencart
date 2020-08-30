@@ -101,8 +101,8 @@ class ControllerExtensionPaymentPPStandard extends Controller {
 	}
 
 	public function callback() {
-		if (isset($this->request->post['order_id'])) {
-			$order_id = $this->request->post['order_id'];
+		if (isset($this->request->post['custom'])) {
+			$order_id = $this->request->post['custom'];
 		} else {
 			$order_id = 0;
 		}
