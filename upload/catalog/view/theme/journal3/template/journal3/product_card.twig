@@ -72,9 +72,9 @@
           <div class="price">
             <div>
               {% if product.special %}
-                <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+                <span class="price-new">{{ product.special }} / sqft</span> <span class="price-old">{{ product.price }}</span>
               {% else %}
-                <span class="price-normal">{{ product.price }}</span>
+                <span class="price-normal">{{ product.price }} / sqft</span>
               {% endif %}
             </div>
             {% if product.tax %}
