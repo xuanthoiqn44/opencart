@@ -63,8 +63,8 @@ class ControllerMailOrder extends Controller {
 
 		// HTML Mail
 		$data['title'] = sprintf($language->get('text_subject'), $order_info['store_name'], $order_info['order_id']);
-		// $data['text_store_address'] = $language->get('text_store_address');
-		// $data['text_store_phone'] = $language->get('text_store_phone');
+		$data['text_store_address'] = $language->get('text_store_address');
+		$data['text_store_phone'] = $language->get('text_store_phone');
 
 		$data['text_greeting'] = sprintf($language->get('text_greeting'), $order_info['store_name']);
 		$data['text_link'] = $language->get('text_link');
