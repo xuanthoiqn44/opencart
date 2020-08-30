@@ -156,6 +156,7 @@ class ControllerExtensionPaymentPPStandard extends Controller {
 
 						$this->log->write('PP_STANDARD :: receiver_match: ' . $receiver_match);
 						$this->log->write('PP_STANDARD :: total_paid_match: ' . $total_paid_match);
+						$this->log->write('PP_STANDARD :: order_id: ' . $order_id);
 						if ($receiver_match && $total_paid_match) {
 							$order_status_id = $this->config->get('payment_pp_standard_completed_status_id');
 						}
